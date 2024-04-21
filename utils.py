@@ -54,4 +54,8 @@ def create_transition_frames(start_img, end_img, steps=10):
         frames.append(temp_img)
     return frames
 
+def create_steady_frames(image, steps=10):
+    """ Generate steady frames for a given image. """
+    return [image] * steps
+
 
